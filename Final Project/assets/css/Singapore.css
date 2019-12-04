@@ -1,0 +1,129 @@
+body {
+    margin: auto;
+    display: block;
+}
+
+#title {
+  font-size:40px;
+  font-family: 'Lobster', cursive;
+  color: #574A70
+  position: relative;
+  text-align: center;
+  border: 3px solid #008CBA;
+}
+
+#rotate{
+  transform:rotate(90deg);
+}
+
+.icon-container{
+  text-align: center;
+  display: block;
+}
+
+.home-icon{
+    width: 150px;
+    position: relative;
+    display: inline-block;
+    margin: 30px 30px;
+    text-align: center;
+}
+
+#carousel,
+.carousel-image {
+  width: 400px;
+  height: 400px;
+  display: block;
+}
+
+#carousel-container{
+  margin: auto;
+  left: 50%
+}
+
+#carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%
+}
+
+#carousel-image-row {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 0px;
+  transition: 0.5s all;
+}
+
+.carousel-image img {
+  height: 100%;
+  width: auto;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+
+#carousel-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+#button-next,
+#button-previous {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.image-card, .image-card-color-overlay {
+    width: 7600px;
+    height: 4000px;
+}
+
+.image-card {
+    overflow: hidden;
+    margin-right: 20px;
+    position: relative;
+}
+
+.image-card img {
+    width: 75%;
+}
+
+.image-card-color-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.0;
+    transition: 0.3s;
+    background-color: navy;
+}
+
+.image-card:hover .image-card-color-overlay {
+    opacity: 0.7;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.div{
+  background-color: #008CBA;
+}
